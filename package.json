@@ -1,0 +1,29 @@
+{
+  "name": "task-manager-app",
+  "version": "1.0.0",
+  "description": "A full-stack task management application with user authentication and real-time updates",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "task-manager",
+    "supabase",
+    "javascript",
+    "web-app",
+    "todo",
+    "productivity"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/task-manager-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/task-manager-app/issues"
+  },
+  "homepage": "https://github.com/yourusername/task-manager-app#readme"
+}

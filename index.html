@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager - Supabase Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📋 Task Manager</h1>
+            <div class="auth-section">
+                <div id="user-info" class="user-info hidden">
+                    <span id="user-email"></span>
+                    <button id="logout-btn" class="btn btn-secondary">Logout</button>
+                </div>
+                <div id="auth-forms" class="auth-forms">
+                    <div id="login-form" class="auth-form active">
+                        <h3>Login</h3>
+                        <input type="email" id="login-email" placeholder="Email" required>
+                        <input type="password" id="login-password" placeholder="Password" required>
+                        <button id="login-btn" class="btn btn-primary">Login</button>
+                        <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                    </div>
+                    <div id="signup-form" class="auth-form">
+                        <h3>Sign Up</h3>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                        <button id="signup-btn" class="btn btn-primary">Sign Up</button>
+                        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content hidden">
+            <!-- Task Creation Form -->
+            <section class="task-form-section">
+                <div class="form-container">
+                    <h2>Add New Task</h2>
+                    <form id="task-form">
+                        <input type="text" id="task-title" placeholder="Task title" required>
+                        <textarea id="task-description" placeholder="Task description (optional)" rows="3"></textarea>
+                        <select id="task-priority">
+                            <option value="low">Low Priority</option>
+                            <option value="medium" selected>Medium Priority</option>
+                            <option value="high">High Priority</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary">Add Task</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Task List -->
+            <section class="task-list-section">
+                <div class="task-list-header">
+                    <h2>My Tasks</h2>
+                    <div class="filter-options">
+                        <select id="filter-status">
+                            <option value="all">All Tasks</option>
+                            <option value="pending">Pending</option>
+                            <option value="completed">Completed</option>
+                        </select>
+                        <select id="filter-priority">
+                            <option value="all">All Priorities</option>
+                            <option value="high">High Priority</option>
+                            <option value="medium">Medium Priority</option>
+                            <option value="low">Low Priority</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="tasks-container" class="tasks-container">
+                    <div id="loading" class="loading">Loading tasks...</div>
+                    <div id="no-tasks" class="no-tasks hidden">
+                        <p>No tasks yet. Add your first task above!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Loading Overlay -->
+        <div id="loading-overlay" class="loading-overlay hidden">
+            <div class="loading-spinner"></div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toast-container" class="toast-container"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
