@@ -142,17 +142,5 @@ task-manager-app/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- [Supabase](https://supabase.com) for the excellent backend-as-a-service
-- Icons and design inspiration from various open-source projects
-
-## 📞 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/task-manager-app](https://github.com/yourusername/task-manager-app)
