@@ -113,7 +113,7 @@ Open your browser and navigate to `http://localhost:8000`
 2. **Login**: Access your personal task dashboard
 3. **Add Tasks**: Create tasks with titles, descriptions, and priority levels
 4. **Manage Tasks**: Mark as complete, edit, or delete tasks
-5. **Filter**: View tasks by status (all/pending/completed) and priority
+5. **Filter**: View tasks by status (all/pending/completed) and priority (low/medium/high)
 
 ## 🏗️ Project Structure
 
