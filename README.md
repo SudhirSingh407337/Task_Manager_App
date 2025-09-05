@@ -12,9 +12,11 @@ A complete task management application built with HTML, CSS, JavaScript, and Sup
 - **Responsive Design**: Works on desktop and mobile devices
 - **Secure**: Row Level Security (RLS) ensures users only see their own tasks
 
-## 🚀 Live Demo
+## 🎥 Video Demo
 
-[Insert your live demo link here]
+[![Task Manager Project](https://img.youtube.com/vi/BovUS0pBZfc/0.jpg)](https://youtu.be/BovUS0pBZfc) 
+
+[Task Manager Project](https://youtu.be/BovUS0pBZfc)
 
 ## 🛠️ Technologies Used
 
